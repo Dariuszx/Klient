@@ -1,0 +1,179 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #a1a2a5;
+    color: #eee;
+
+}
+
+#background {
+    background: #000 url("/static/images/background_2.jpg") no-repeat right top;
+    background-size: 100%;
+    width: 100%;
+    height: auto !important;
+    min-height: 100%;
+    color: #fff;
+}
+
+#background p {
+    margin: 5px 0px 0px 0px;
+}
+
+#login_form {
+    background: #364571 10% 40%;
+    padding: 1em;
+    text-align: center;
+    position: fixed;
+    color: #cbcccd;
+    font-family: sans-serif, arial;
+    top: 50%;
+    left: 50%;
+    width: 30em;
+    margin-top: -9em;
+    margin-left: -15em;
+    opacity: .98;
+    border: 1px solid #4d63a1;
+    box-shadow: 0px 0px 30px #000;
+}
+
+#error_message {
+    color: #e01414;
+    font-weight: bold;
+}
+
+#panel {
+    width: 100%;
+    font-family: sans-serif, arial;
+}
+
+#menu {
+    border-right: 1px solid #797a7c;
+    border-bottom: 1px solid #797a7c;
+    border-left: 1px solid #797a7c;
+    float:left;
+    padding: 10px;
+    width: 16%;
+    margin-left: 3%;
+    background-color: #e9eaed;
+    color: #333333;
+}
+
+#message_box {
+    float:left;
+    border-right: 1px solid #797a7c;
+    border-bottom: 1px solid #797a7c;
+    border-left: 1px solid #797a7c;
+    margin-left: 6%;
+    padding: 10px;
+    width: initial;
+    width: 65%;
+    background-color: #e9eaed;
+    color: #333333;
+}
+
+#header {
+    padding: 10px 5% 10px 10px;
+    border-bottom: 1px solid #1b316c;
+    text-align: right;
+    background-color: #3d5b99;
+    font-size: 90%;
+}
+
+#header p {
+    margin: 0px;
+    font-weight: bold;
+}
+#header span {
+    color: #b9c9e3;
+}
+
+a.link:hover {
+    color: red;
+}
+
+a.link {
+    color: #eee;
+    text-decoration: underline;
+}
+
+a.new_message {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif, Arial;
+    padding: 5px 8px 5px 8px;
+    border-radius: 3px;
+    background: #2f477a;
+}
+
+a.new_message:hover {
+    background-color: #23355b;
+}
+
+a.menu {
+    color: #333333;
+    font-size: 120%;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 7px;
+
+}
+
+a.menu:hover {
+    border-radius: 5px;
+    background-color: #dcdee3;
+}
+
+#menu p {
+    text-align: center;
+}
+
+.warning_message {
+    font-size: 200%;
+    text-align: center;
+}
+
+#message_box p {
+    padding: 5px;
+    margin: 0px;
+    border-radius: 5px;
+    font-family: sans-serif, arial;
+}
+
+#message_box p:hover {
+    background-color: #dcdee3;
+
+}
+
+#message_box a {
+    color: #1b1b1b;
+    text-decoration: none;
+}
+
+#message_box a:hover {
+    color: #3d5b99;
+}
+
+.shortcut {
+    font-size: 80%;
+    font-style: italic;
+    padding-left: 10%;
+}
+
+#form_new_message form {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    padding: 10px 5% 10px 10px;
+    border-top: 1px solid #1b316c;
+    text-align: left;
+    background-color: #3d5b99;
+    font-size: 90%;
+    width: 100%;
+}
