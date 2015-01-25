@@ -1,1 +1,6 @@
 login = "http://0.0.0.0:8001/login"
+get_idea = "http://0.0.0.0:8001/idea/"
+get_user_idea = "http://0.0.0.0:8001/user/idea/"
+get_idea_threads = "http://0.0.0.0:8001/idea/thread/"
+get_thread_notes = "http://0.0.0.0:8001/thread/note/"
+new_note = "http://0.0.0.0:8001/note/"

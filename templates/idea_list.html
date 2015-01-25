@@ -1,0 +1,17 @@
+<p class="warning_message">Lista pomysłów</p>
+{% if ideas %}
+        <form method="post" action="/new/idea/">
+            <input type="submit" name="new" value="Stwórz nowy pomysł" />
+        </form>
+
+
+        {% for idea in ideas %}
+            <p>
+                    <a href="/show/idea/{{ idea.idea_id }}" class="message_list">{{ idea.title }}</a>
+            </p>
+        {% endfor %}
+
+
+{% else %}
+        <p class="warning_message">Brak pomysłów do wyświetlenia.<br />Czas stworzyć coś niepowtarzalnego....</p>
+{% endif %}

@@ -1,0 +1,17 @@
+<p class="warning_message">Lista wątków pomysłu</p>
+
+<form method="post" action="/new/thread/">
+            <input type="submit" name="new" value="Stwórz nowy wątek" />
+</form>
+
+{% if threads %}
+        {% for thread in threads %}
+            <p>
+                    <a href="/show/thread/{{ thread.thread_id }}" class="message_list">{{ thread.overview }}</a>
+            </p>
+        {% endfor %}
+
+
+{% else %}
+        <p class="warning_message">Brak wątków do wyświetlenia</p>
+{% endif %}

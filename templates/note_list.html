@@ -1,0 +1,17 @@
+<p class="warning_message">Lista notatek wątku</p>
+
+<form method="post" action="/new/note/{{ thread_id }}">
+            <input type="submit" name="new" value="Stwórz nową notatke" />
+</form>
+
+{% if notes %}
+        {% for note in notes %}
+            <p>
+                    <a href="/show/note/{{ note.note_id }}" class="message_list">{{ note.text }} </a> <b>Autor: <a href="" class="message_list">{{ note.login }}</a></b>
+            </p>
+        {% endfor %}
+
+
+{% else %}
+        <p class="warning_message">Brak notatek do wyświetlenia</p>
+{% endif %}

@@ -1,0 +1,19 @@
+<div id="message_box">
+
+{% ifequal option "ideas" %}
+    {% include 'idea_list.html' %}
+{% endifequal %}
+
+{% ifequal option "threads" %}
+    {% include 'thread_list.html' %}
+{% endifequal %}
+
+{% ifequal option "notes" %}
+    {% include 'note_list.html' %}
+{% endifequal %}
+
+{% ifequal option "new_note" %}
+    {% include 'new_note.html' %}
+{% endifequal %}
+
+</div>
