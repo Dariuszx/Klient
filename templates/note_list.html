@@ -5,12 +5,14 @@
 </form>
 
 {% if notes %}
+        <table style="width: 100%;">
         {% for note in notes %}
-            <p>
-                    <a href="/show/note/{{ note.note_id }}" class="message_list">{{ note.text }} </a> <b>Autor: <a href="" class="message_list">{{ note.login }}</a></b>
-            </p>
+            <tr>
+                    <td><p><a href="/show/note/{{ note.note_id }}" class="message_list">{{ note.text }} </a></p></td>
+                    <td style="text-align: right;">Autor: <a href="" class="message_list">{{ note.login }}</a></td>
+            </tr>
         {% endfor %}
-
+        </table>
 
 {% else %}
         <p class="warning_message">Brak notatek do wyświetlenia</p>

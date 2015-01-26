@@ -1,0 +1,15 @@
+{% if note %}
+    <p style="text-align:center;"><a href="/edit/note/{{ note_id }}" class="message_list">Edytuj</a></p>
+    <p style="text-align:center;"><a href="/delete/note/{{ note_id }}" class="message_list">Usuń notatkę</a></p>
+    <table>
+    <tr>
+        <td>Autor:</td><td><p id="from_to">{{ note.login }}</p></td>
+    </tr>
+    <tr>
+        <td>Zawartość:</td><td><p id="content">{{ note.text }}</p></td>
+    </tr>
+    </table>
+
+{% else %}
+    <p id="error_message">Błąd wyświetlania notatki</p>
+{% endif %}

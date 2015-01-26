@@ -1,0 +1,36 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+    <meta charset="UTF-8">
+    <title>Sign in</title>
+    <link rel="stylesheet" type="text/css" href="{% static "styles.css" %}">
+
+</head>
+
+<body>
+
+    <div id="background">
+
+        <div id="login_form">
+
+            {% if message %}
+                 <p id="error_message">Niepoprawne dane logowania</p>
+            {% endif %}
+
+            <form name="form" action="/login" method="post">
+                <p>Login:</p><input id="login" type="text" name="login" />
+                <p>Password:</p><input id="password" type="password" name="password" />
+                <br /><input id="submit" type="submit" value="Sign in" />
+            </form>
+            
+        </div>
+
+    </div>
+
+<script type="text/javascript" src="{% static "script.js" %}"></script>
+
+</body>
+
+</html>

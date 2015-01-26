@@ -1,4 +1,4 @@
 <form method="post" action="">
-    <p>Treść</p> <textarea {% if content %} value="{{ content }}" {% endif %}name="content" cols="40", rows="10"></textarea>
+    <p>Treść</p> <textarea name="content" cols="40", rows="10">{% if content %}{{content}}{% endif %}</textarea>
     <br /><input type="submit" value="Wyślij" />
 </form>
